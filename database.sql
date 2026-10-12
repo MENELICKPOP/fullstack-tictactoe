@@ -1,0 +1,7 @@
+CREATE DATABASE tictactoe_db;
+USE tictactoe_db;
+CREATE TABLE match_history (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    result VARCHAR(10) NOT NULL,
+    played_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
